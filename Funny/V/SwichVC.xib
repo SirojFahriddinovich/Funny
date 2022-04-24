@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SwichVC" customModule="Funny" customModuleProvider="target">
+            <connections>
+                <outlet property="imgView" destination="VCt-Qc-cOf" id="7Y6-Q3-jVT"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outletCollection property="btns" destination="evX-Kg-IIY" collectionClass="NSMutableArray" id="vBB-Lp-x8C"/>
+                <outletCollection property="btns" destination="r9X-FN-a0c" collectionClass="NSMutableArray" id="epo-NX-TDZ"/>
+                <outletCollection property="btns" destination="mkq-eV-hMZ" collectionClass="NSMutableArray" id="sNR-e3-8VO"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="ffR-Af-grV">
+                    <rect key="frame" x="20" y="338" width="374" height="220"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="evX-Kg-IIY" customClass="SoftButton" customModule="SoftButton">
+                            <rect key="frame" x="0.0" y="0.0" width="374" height="60"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60" id="ChD-Yl-mjq"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Get facts about cats ">
+                                <color key="titleColor" systemColor="systemTealColor"/>
+                            </state>
+                            <connections>
+                                <action selector="swictTap:" destination="-1" eventType="touchUpInside" id="Wnr-YA-uN9"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r9X-FN-a0c" customClass="SoftButton" customModule="SoftButton">
+                            <rect key="frame" x="0.0" y="80" width="374" height="60"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60" id="6cb-sC-cQM"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Cats photo">
+                                <color key="titleColor" systemColor="systemTealColor"/>
+                            </state>
+                            <connections>
+                                <action selector="swictTap:" destination="-1" eventType="touchUpInside" id="TYj-cX-Die"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mkq-eV-hMZ" customClass="SoftButton" customModule="SoftButton">
+                            <rect key="frame" x="0.0" y="160" width="374" height="60"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60" id="tHU-vT-X9w"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="see pictures">
+                                <color key="titleColor" systemColor="systemTealColor"/>
+                            </state>
+                            <connections>
+                                <action selector="swictTap:" destination="-1" eventType="touchUpInside" id="tvD-FZ-Kgr"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VCt-Qc-cOf" customClass="SSNeumorphicView" customModule="SSNeumorphicView">
+                    <rect key="frame" x="83" y="122.5" width="248" height="165.5"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cat2" translatesAutoresizingMaskIntoConstraints="NO" id="QEf-8M-qM2">
+                            <rect key="frame" x="5" y="18" width="238" height="142.5"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="QEf-8M-qM2" secondAttribute="trailing" constant="5" id="2d1-86-cag"/>
+                        <constraint firstItem="QEf-8M-qM2" firstAttribute="leading" secondItem="VCt-Qc-cOf" secondAttribute="leading" constant="5" id="Fts-FI-n6L"/>
+                        <constraint firstAttribute="bottom" secondItem="QEf-8M-qM2" secondAttribute="bottom" constant="5" id="axP-D3-3zm"/>
+                        <constraint firstItem="QEf-8M-qM2" firstAttribute="top" secondItem="VCt-Qc-cOf" secondAttribute="top" constant="18" id="imo-Pg-rts"/>
+                        <constraint firstAttribute="width" secondItem="VCt-Qc-cOf" secondAttribute="height" multiplier="1.5" id="yC1-mc-hOI"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstItem="VCt-Qc-cOf" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="AkR-6H-qZf"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ffR-Af-grV" secondAttribute="trailing" constant="20" id="BA9-ev-WEc"/>
+                <constraint firstItem="VCt-Qc-cOf" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.6" id="HTM-O8-M7J"/>
+                <constraint firstItem="ffR-Af-grV" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="QSe-Af-LGb"/>
+                <constraint firstItem="ffR-Af-grV" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Qdg-8Q-TLC"/>
+                <constraint firstItem="ffR-Af-grV" firstAttribute="top" secondItem="VCt-Qc-cOf" secondAttribute="bottom" constant="50" id="aVK-vM-auq"/>
+                <constraint firstItem="ffR-Af-grV" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="qrL-sr-F0x"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="109.82142857142857"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="cat2" width="612" height="422"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
